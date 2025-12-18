@@ -1,43 +1,30 @@
 package com.example.store.model;
 
 public class User {
-	
-	private int id;
-	private String email;
-	private String password;
-	private String fullName;
-	
-	public User() {}
-	
-	public User(int id, String email, String password, String fullName) {
-		this.id = id;
-		this.email = email;
-		this.password = password;
-		this.fullName = fullName;
-	}
 
-	public int getId() {
-		return id;
-	}
+  private long id;
+  private String email;
+  private String passwordHash;
+  private String fullName;
 
-	public void setId(int id) {
-		this.id = id;
-	}
+  public User() {}
 
-	public String getEmail() {
-		return email;
-	}
+  public User(long id, String email, String passwordHash, String fullName) {
+    this.id = id;
+    this.email = email;
+    this.passwordHash = passwordHash;
+    this.fullName = fullName;
+  }
 
-	public void setEmail(String email) {
-		this.email = email;
-	}
+  public long getId() { return id; }
+  public void setId(long id) { this.id = id; }
 
-	public String getFullName() {
-		return fullName;
-	}
+  public String getEmail() { return email; }
+  public void setEmail(String email) { this.email = email; }
 
-	public void setFullName(String fullName) {
-		this.fullName = fullName;
-	}
+  public String getPasswordHash() { return passwordHash; }
+  public void setPasswordHash(String passwordHash) { this.passwordHash = passwordHash; }
 
+  public String getFullName() { return fullName; }
+  public void setFullName(String fullName) { this.fullName = fullName; }
 }

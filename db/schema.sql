@@ -31,10 +31,6 @@ CREATE TABLE IF NOT EXISTS cart_items (
 
 
 
--- SEED USERS
-
-INSERT INTO users (email, password_hash, full_name) VALUES
-  ('demo@example.com', 'password123', 'Demo User');
 
 -- SEED PRODUCTS
 INSERT INTO products (id, name, category, price) VALUES
