@@ -6,6 +6,10 @@
 <body>
 <h1>Store OOP is running ✅</h1>
 
+<p><a href="${pageContext.request.contextPath}/register">Register</a></p>
+<p><a href="${pageContext.request.contextPath}/login">login</a></p>
+
+
 <p><a href="${pageContext.request.contextPath}/products">view products</a></p>
 <p><a href="${pageContext.request.contextPath}/db/ping">Test DB connection</a></p>
 
